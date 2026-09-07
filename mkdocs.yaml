@@ -1,0 +1,10 @@
+site_name: Adverse Outcome Pathway Ontology (AOPO)
+site_url: https://insilicovida-research-lab.github.io/AOP-ontology/
+repo_url: https://github.com/InSilicoVida-Research-Lab/AOP-ontology
+repo_name: InSilicoVida-Research-Lab/AOP-ontology
+theme:
+  name: material
+nav:
+  - Getting started: index.md
+  - Contributing: contributing.md
+  - Cite: cite.md
