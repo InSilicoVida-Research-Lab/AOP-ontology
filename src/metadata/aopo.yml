@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/aopo
+
+idspace: AOPO
+base_url: /obo/aopo
+
+products:
+- aopo.owl: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/AOP-ontology/main/aopo.owl
+- aopo.obo: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/AOP-ontology/main/aopo.obo
+
+term_browser: ontobee
+example_terms:
+- AOPO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/AOP-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/InSilicoVida-Research-Lab/AOP-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/AOPO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/AOP-ontology/main/
+

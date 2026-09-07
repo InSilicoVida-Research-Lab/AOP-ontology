@@ -1,0 +1,30 @@
+id: aopo
+title: Adverse Outcome Pathway Ontology
+description: >-
+  An OBO-aligned ontology for adverse outcome pathways (AOPs) in computational
+  toxicology.
+license: https://www.apache.org/licenses/LICENSE-2.0
+github_org: InSilicoVida-Research-Lab
+github_repo: AOP-ontology
+git_main_branch: main
+import_group:
+  products:
+    - id: ro
+    - id: iao
+    - id: chebi
+      module_type: filter
+    - id: hp
+      module_type: filter
+release_artefacts:
+  - base
+  - full
+  - simple
+  - obo
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+robot_java_args: '-Xmx8G'
+reasoner: ELK
+create_obo_metadata: true
